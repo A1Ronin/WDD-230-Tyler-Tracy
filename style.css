@@ -7,11 +7,11 @@ html {
 
 a {
     text-decoration: none;
-    color: rgb(235, 216, 53);
+    color: rgb(98, 168, 113);
 }
 
 a:hover {
-    background-color: #be1c44;
+    background-color: #722a2a;
     color: black;
 }
 
@@ -55,7 +55,7 @@ footer a {
 }
 
 .date {
-    color: #ffa2b9;
+    color: #c5c481;
 }
 
 @media (max-width: 740px) {
