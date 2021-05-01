@@ -1,8 +1,8 @@
 html {
     background-color: #304d3e;
     background-size: 30%;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(82, 30, 30);
+    font-family: 'Zen Dots', cursive;
+    color: rgb(175, 60, 60);
   }
 
 a {
@@ -27,7 +27,7 @@ a:hover {
     max-width: 300px;
     width: 100%;
     float: right;
-    border: 5px solid rgb(182, 177, 134);
+    border: 5px solid rgb(190, 189, 126);
     margin-right: 25px;
 }
 
@@ -46,7 +46,7 @@ footer {
     padding: 30px;
     color: white;
     background-color: #2f4454;
-    border: 5px double rgb(197, 196, 129);
+    border: 5px double rgb(190, 189, 126);
     border-radius: 15px;
 }
 
@@ -64,6 +64,6 @@ footer a {
     }
     
     #myPic {
-        float: none;
+        float: right;
     }
 }
