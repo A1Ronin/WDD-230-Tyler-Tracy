@@ -1,5 +1,5 @@
 html {
-    background-color: #2f4454;
+    background-color: #304d3e;
     background-size: 30%;
     font-family: 'Zen Dots', cursive;
     color: white;
@@ -11,14 +11,14 @@ a {
 }
 
 a:hover {
-    background-color: rgb(235, 216, 53);
+    background-color: rgb(53, 199, 235);
     color: black;
 }
 
 .content {
     display: block;
     padding: 40px;
-    background-color: #1c3334;
+    background-color: #304d3e;
     max-width: 985px;
     margin: 0 auto;
     border: 3px solid white;
@@ -30,13 +30,13 @@ header, footer {
     padding: 30px;
     text-align: center;
     color: white;
-    background-color: #2f4454;
+    background-color: #304d3e;
     border: 5px double white;
     border-radius: 15px;
 }
 
 .date {
-    color: #c6ec04;
+    color: #c44f32;
     font-size: 0.9em;
 }
 
