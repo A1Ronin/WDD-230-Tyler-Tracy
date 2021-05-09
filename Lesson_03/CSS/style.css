@@ -7,7 +7,7 @@ nav {
     text-align: center;
     text-decoration: white;
     padding: 20px;
-    width: auto;
+    width: 100%;
     background-color: #2e4057;
 }
 nav a {
@@ -20,13 +20,15 @@ nav:hover {
     background-color: #e0607e;
     color: white;
 }
-.content {
-    
+.section1 {
+    background-color:#2e4057;
+    padding: 40px 40px 40px 40px;
     
 }
 footer {
     text-align: center;
     padding: 20px;
+    width: 100%;
     background-color:#2e4057;
 
 }
