@@ -1,0 +1,32 @@
+html {
+    background-color: white;
+}
+nav {
+    display: block;
+    position: fixed;
+    text-align: center;
+    text-decoration: white;
+    padding: 20px;
+    width: auto;
+    background-color: #2e4057;
+}
+nav a {
+    color: #f4ebd9;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+nav:hover {
+    background-color: #e0607e;
+    color: white;
+}
+.content {
+    
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#2e4057;
+
+}
