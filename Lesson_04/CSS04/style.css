@@ -10,7 +10,7 @@ html {
 .header {
     position: relative;
 }
-.logo {
+.logo{
     position: absolute;
     display: flex;
     align-items: center;
@@ -18,8 +18,12 @@ html {
     width: 100px;
     height: 100px;
 }
-.wsh {
+.wsh, .moto {
     align-items: center;
+}
+.k {
+    width: 10px;
+    height: 10px;
 }
 /* Small/Phone View ***************/
 nav {
@@ -102,5 +106,9 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+.map {
+    width: 20px;
+    height: 40px;
 }
 
