@@ -4,6 +4,24 @@ html {
     font-family: 'Zen Dots', cursive;
     color: rgb(29, 57, 83);
 }
+.content {
+    display: grid;
+}
+.header {
+    position: relative;
+    background-color: rgb(253, 253, 253);
+}
+.logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+.wsh {
+    align-items: center;
+}
 /* Small/Phone View ***************/
 nav {
 	margin: 0 auto;
