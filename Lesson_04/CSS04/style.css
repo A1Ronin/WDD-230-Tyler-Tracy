@@ -1,114 +1,407 @@
-html {
-    background-color: #ffffff;
-    background-size: 100%;
-    font-family: 'Zen Dots', cursive;
-    color: rgb(29, 57, 83);
-}
-.content {
-    display: grid;
-}
-.header {
-    position: relative;
-}
-.logo{
-    position: absolute;
+main {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-.wsh, .moto {
-    align-items: center;
+
+body {
+    background-color: #2a324b;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-.k {
-    width: 10px;
-    height: 10px;
+
+header {
+    display: block;
+    padding: 0px;
+    text-align: left;
+    background-color: #dce2f0;
+    width: auto;
 }
-/* Small/Phone View ***************/
+
+h1 {
+    color: #2a324b;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin: 0px;
+    padding: 25px;
+    padding-bottom: 3%;
+    font-size: 60px;
+    font-weight: bolder;
+    display: block;
+}
+
 nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: rgb(206, 194, 91);
-    font-family: 'Zen Dots', cursive;
-    color: rgb(29, 57, 83);
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 1px;
+    background-color: #dce2f0;
 }
-.navigation {
-	list-style: none;
-	padding: 0;
+
+nav ul{
+    list-style-type: none;
+    margin: 2px 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+	flex-flow: column;
+	align-items: center;
 }
-.navigation li:first-child {
-	display: block;
+
+nav li {
+    float: left;
+    padding: 10px;
+  }
+  
+li a {
+    color: #2a324b;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+li a:hover {
+    background-color: #2a324b;
+    color: #dce2f0;
+    padding: 5px;
+}
+
 .navigation li {
-	display: none;
+    display: none;
 }
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
 }
+
+.navigation li:first-child {
+    display: block;
+    font-size: large;
+}
+
+
+/* MUST BE IN THIS ORDER */
+.navigation a:link, 
+.navigation a:visited, 
+.navigation a:hover, 
+.navigation a:active,
+.navigation a:focus {
+    display:block;
+    padding: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    color: #e8e8e8;
+    font-weight: bold;
+}
+
 .navigation a:hover {
-	color: white;
-	background-color: black;
+    color: #00303f;
+    background-color: #e8e8e8;
 }
 
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-	display: block;
+.navigation.responsive li {
+    display: block;
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-}
-body, html {
-    height: 100%;
-}
-
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2016/08/12/20/14/fields-1589613_1280.jpg");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+h2 {
+    color: #2a324b;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 10px;
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+   }
+   
+h3 {
+    color: #2a324b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0px 0px 0px 20px;
+    letter-spacing: 3px;
+    font-size: 20px;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.map {
-    width: 20px;
-    height: 40px;
+h4 {
+    color: #2a324b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0px 0px 0px 20px;
+    letter-spacing: 3px;
+    font-size: 15px; 
 }
 
+p {
+    color: #2a324b;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+   }
+   
+img {
+    display: block;
+    margin-right: auto;
+    width: 50%;
+    padding: 4%;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color:#dce2f0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+footer p {
+     color: #2a324b;
+     padding: 20px;
+     text-align: center;
+     font-family: 'Quicksand', sans-serif;
+     letter-spacing: 3px;
+}
+
+footer a {
+    color:#2a324b;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.responsive {
+    display: block;
+}
+.group {
+    padding: 0px;
+}
+
+.five-day-forecast {
+    margin-bottom: 0%;
+    background-color: gray;
+    text-align: center;
+}
+
+.article {
+    margin-top: -5%;
+}
+
+.contact-header {
+    text-transform: uppercase;
+}
+
+.forecast-img {
+    display: none;
+}
+
+.footerbar p{
+    text-align: center;
+}
+
+.media {
+    display: none;
+}
+
+.contact {
+    display: inline;
+}
+.icon{
+    color: black;
+    display: inline;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.typography {
+    width:70%;
+    font-family: 'Padauk', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin: 10px;
+    border: solid #F0EFEB 1px;
+}
+
+.logo {
+    width: 13%;
+    float: left;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.medialogo {
+    width: 0px;
+    display: inline;
+    margin: 10px;
+    float: right;
+}
+
+.top-section,
+.weather-summary,
+.five-day-forecast,
+.article {
+    border: black 2px solid;
+    background-color: #e8e8e8;
+    margin: 10px;
+}
+
+.selected a{
+    background-color: #2a324b;
+    color: #dce2f0;
+    padding: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+
+}
+
+@media screen and (min-width: 32.5em) {
+  
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    h1 {
+        font-size: 75px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 60px;
+        text-align: left;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    li a:hover {
+        padding: 15px;
+    }
+
+    .top-of-nav {
+        padding-left: 10%;
+    }
+    nav {
+        max-width: 100%;
+        padding-left: 10%;
+    }
+
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a:link,
+    .navigation a:visited,
+    .navigation a:hover,
+    .navigation a:active,
+    .navigation a:focus {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+
+    footer p {
+        text-align: right;
+    }
+
+    .forecast-img {
+        width: 100%;
+    }
+
+    .five-day-forecast {
+        margin-bottom: 3%;
+        background-color: #e8e8e8;
+        text-align: left;
+    }
+    
+    .article {
+        margin-top: 0%;
+    }
+
+    .social {
+        padding-left: 10%;
+        display: inline;
+        width: 5%;
+    }
+
+    .media {
+        display: block-inline;
+
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 150px;
+        letter-spacing: 17px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 120px;
+        text-align: left;
+    }
+
+    nav ul {
+        font-size: larger;
+    }
+
+    li {
+        margin: 15px;
+    }
+
+    li a:hover {
+        padding: 25px;
+    }
+    .selected a{
+        background-color: #2a324b;
+        color: #dce2f0;
+        padding: 25px;
+    }
+
+    .navigation {
+        width: 800px;
+        margin:16px auto;
+    }
+  }
